@@ -596,6 +596,22 @@ h2 {
   width: 210px;
 }
 
+.photo-art {
+  background: var(--color-white);
+}
+
+.photo-art::before,
+.photo-art::after {
+  display: none;
+}
+
+.photo-art img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .art-chocolate {
   background: #ead2bd;
 }
