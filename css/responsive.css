@@ -162,7 +162,6 @@
   }
 
   .product-grid,
-  .cake-gallery-grid,
   .steps-grid {
     grid-template-columns: 1fr;
   }
