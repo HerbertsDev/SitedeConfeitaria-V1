@@ -355,126 +355,26 @@ h2 {
   width: 470px;
 }
 
-.cake-card {
-  align-items: center;
-  background: rgba(255, 255, 255, 0.86);
+.hero-photo-card {
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-large);
   box-shadow: var(--shadow-soft);
-  display: flex;
-  flex-direction: column;
-  min-height: 410px;
-  padding: 38px 42px 32px;
+  padding: 12px;
   position: relative;
   transform: rotate(2deg);
-  width: min(390px, 90%);
+  width: min(360px, 90%);
   z-index: 2;
 }
 
-.cake-card-label {
-  align-self: flex-start;
-  background: var(--color-cream-deep);
-  border-radius: 999px;
-  color: var(--color-rose-dark);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 8px 13px;
-  text-transform: uppercase;
-}
-
-.cake-card p {
-  color: var(--color-chocolate);
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  margin-top: auto;
-}
-
-.cake-illustration {
-  height: 235px;
-  margin-top: 28px;
-  position: relative;
-  width: 270px;
-}
-
-.cake-layer,
-.cake-top {
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 190px;
-}
-
-.cake-top {
-  background: var(--color-rose);
-  border-radius: 50%;
-  height: 42px;
-  top: 42px;
-  z-index: 5;
-}
-
-.cake-top::after {
-  background: var(--color-rose);
-  border-radius: 0 0 12px 12px;
-  content: "";
-  height: 28px;
-  left: 0;
-  position: absolute;
-  top: 19px;
+.hero-photo-card img {
+  aspect-ratio: 3 / 4;
+  border-radius: 22px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
-}
-
-.cake-cherry {
-  background: var(--color-rose-dark);
-  border-radius: 50%;
-  height: 24px;
-  left: calc(50% - 12px);
-  position: absolute;
-  top: 20px;
-  width: 24px;
-  z-index: 6;
-}
-
-.cake-cherry::before {
-  border-left: 2px solid #68804d;
-  border-radius: 50%;
-  content: "";
-  height: 22px;
-  left: 11px;
-  position: absolute;
-  top: -16px;
-  transform: rotate(25deg);
-  width: 14px;
-}
-
-.cake-layer {
-  height: 48px;
-}
-
-.layer-cream {
-  background: #f6d7b8;
-  top: 72px;
-}
-
-.layer-chocolate {
-  background: var(--color-chocolate);
-  top: 120px;
-}
-
-.layer-cream.bottom {
-  border-radius: 0 0 12px 12px;
-  top: 168px;
-}
-
-.cake-plate {
-  background: #e0b77f;
-  border-radius: 50%;
-  bottom: 4px;
-  height: 25px;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 240px;
 }
 
 .decorative-dot {

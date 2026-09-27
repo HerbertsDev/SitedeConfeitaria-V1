@@ -140,14 +140,10 @@
     width: 360px;
   }
 
-  .cake-card {
-    min-height: 345px;
-    padding: 28px;
-  }
-
-  .cake-illustration {
-    transform: scale(0.82);
-    transform-origin: center top;
+  .hero-photo-card {
+    padding: 10px;
+    transform: rotate(1deg);
+    width: min(315px, 92%);
   }
 
   .section-heading {
