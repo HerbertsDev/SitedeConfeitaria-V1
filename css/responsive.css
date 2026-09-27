@@ -31,7 +31,9 @@
     pointer-events: none;
     position: fixed;
     transform: translateY(-20px);
-    transition: opacity 180ms ease, transform 180ms ease;
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease;
     z-index: 101;
   }
 

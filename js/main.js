@@ -19,7 +19,10 @@ menuButton?.addEventListener("click", () => {
 
   menuButton.classList.toggle("active", menuIsOpen);
   menuButton.setAttribute("aria-expanded", String(menuIsOpen));
-  menuButton.setAttribute("aria-label", menuIsOpen ? "Fechar menu" : "Abrir menu");
+  menuButton.setAttribute(
+    "aria-label",
+    menuIsOpen ? "Fechar menu" : "Abrir menu",
+  );
   document.body.classList.toggle("menu-open", menuIsOpen);
 });
 
@@ -33,7 +36,7 @@ contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(contactForm);
-  const name = formData.get("name").trim();
+  const name = String(formData.get("name") ?? "").trim();
 
   formFeedback.textContent = `Obrigada, ${name}! Esta é uma simulação e nenhuma mensagem foi enviada.`;
   contactForm.reset();

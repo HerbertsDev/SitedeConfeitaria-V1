@@ -16,7 +16,9 @@
   --radius-medium: 22px;
   --radius-small: 12px;
   --font-display: Georgia, "Times New Roman", serif;
-  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   --container: 1160px;
 }
 
@@ -98,7 +100,10 @@ h2 {
   position: fixed;
   right: 0;
   top: 0;
-  transition: border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    backdrop-filter 180ms ease;
   z-index: 100;
 }
 
@@ -146,7 +151,7 @@ h2 {
 
 .brand-name small {
   font-family: var(--font-body);
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.18em;
   margin-top: 7px;
@@ -208,7 +213,9 @@ h2 {
   display: block;
   height: 2px;
   margin: 5px 0;
-  transition: transform 180ms ease, opacity 180ms ease;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
 }
 
 .hero {
@@ -219,7 +226,11 @@ h2 {
 }
 
 .hero::before {
-  background: radial-gradient(circle, rgba(201, 121, 125, 0.13) 0 2px, transparent 3px);
+  background: radial-gradient(
+    circle,
+    rgba(201, 121, 125, 0.13) 0 2px,
+    transparent 3px
+  );
   background-size: 26px 26px;
   content: "";
   height: 180px;
@@ -279,7 +290,10 @@ h2 {
   justify-content: center;
   min-height: 54px;
   padding: 14px 28px;
-  transition: box-shadow 180ms ease, transform 180ms ease, background 180ms ease;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
 }
 
 .button:hover,
@@ -445,7 +459,9 @@ h2 {
   box-shadow: 0 4px 0 transparent;
   overflow: hidden;
   position: relative;
-  transition: box-shadow 180ms ease, transform 180ms ease;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
 
 .product-card:hover {
@@ -457,7 +473,7 @@ h2 {
   background: var(--color-rose-dark);
   border-radius: 999px;
   color: var(--color-white);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 800;
   left: 18px;
   letter-spacing: 0.08em;
@@ -469,167 +485,16 @@ h2 {
 }
 
 .product-art {
-  align-items: center;
-  display: flex;
-  height: 245px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.product-art::before,
-.product-art::after {
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-}
-
-.product-art::before {
-  background: rgba(255, 255, 255, 0.35);
-  height: 180px;
-  width: 180px;
-}
-
-.product-art::after {
-  border: 1px solid rgba(85, 53, 45, 0.09);
-  height: 210px;
-  width: 210px;
-}
-
-.photo-art {
   background: var(--color-white);
+  height: 245px;
+  overflow: hidden;
 }
 
-.photo-art::before,
-.photo-art::after {
-  display: none;
-}
-
-.photo-art img {
+.product-art img {
   display: block;
   height: 100%;
   object-fit: contain;
   width: 100%;
-}
-
-.art-chocolate {
-  background: #ead2bd;
-}
-
-.art-strawberry {
-  background: #f4dadd;
-}
-
-.art-celebration {
-  background: #eddcbf;
-}
-
-.dessert-pot {
-  background: rgba(255, 255, 255, 0.58);
-  border: 3px solid rgba(85, 53, 45, 0.18);
-  border-radius: 14px 14px 24px 24px;
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  justify-content: flex-end;
-  overflow: hidden;
-  position: relative;
-  transform: rotate(-3deg);
-  width: 125px;
-  z-index: 2;
-}
-
-.pot-topping {
-  color: var(--color-chocolate);
-  font-size: 0.55rem;
-  left: 0;
-  letter-spacing: 8px;
-  position: absolute;
-  text-align: center;
-  top: 8px;
-  width: 100%;
-  z-index: 3;
-}
-
-.pot-topping.strawberry {
-  color: var(--color-rose-dark);
-  font-size: 1.5rem;
-  letter-spacing: 0;
-}
-
-.pot-layer {
-  display: block;
-  height: 37px;
-  width: 100%;
-}
-
-.pot-layer.light {
-  background: #dca77c;
-}
-
-.pot-layer.dark {
-  background: var(--color-chocolate);
-}
-
-.pot-layer.pink {
-  background: #dc8e94;
-}
-
-.pot-layer.cream {
-  background: #fff5df;
-}
-
-.mini-cake {
-  height: 140px;
-  position: relative;
-  width: 155px;
-  z-index: 2;
-}
-
-.mini-candle {
-  background: var(--color-rose-dark);
-  height: 36px;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 7px;
-}
-
-.mini-candle::before {
-  background: var(--color-caramel);
-  border-radius: 50% 50% 50% 0;
-  content: "";
-  height: 13px;
-  left: -3px;
-  position: absolute;
-  top: -13px;
-  transform: rotate(-45deg);
-  width: 13px;
-}
-
-.mini-icing,
-.mini-base {
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-.mini-icing {
-  background: var(--color-rose);
-  border-radius: 50% 50% 12px 12px;
-  height: 45px;
-  top: 34px;
-  width: 140px;
-  z-index: 2;
-}
-
-.mini-base {
-  background: #f5cc9e;
-  border-radius: 6px 6px 14px 14px;
-  bottom: 0;
-  height: 75px;
-  width: 140px;
 }
 
 .product-content {
@@ -638,7 +503,7 @@ h2 {
 
 .product-category {
   color: var(--color-rose-dark);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -678,7 +543,9 @@ h2 {
   font-size: 1.35rem;
   height: 42px;
   justify-content: center;
-  transition: background 180ms ease, color 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
   width: 42px;
 }
 
@@ -798,7 +665,7 @@ h2 {
 
 .about-caption {
   color: var(--color-caramel);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 0.17em;
   margin-top: 25px;
@@ -932,7 +799,9 @@ h2 {
   min-height: 52px;
   outline: none;
   padding: 12px 15px;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
   width: 100%;
 }
 

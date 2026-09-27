@@ -1,0 +1,10 @@
+# Editor settings
+.vscode/
+
+# Generated files
+dist/
+.sites-runtime/
+
+# Operating system files
+.DS_Store
+Thumbs.db
