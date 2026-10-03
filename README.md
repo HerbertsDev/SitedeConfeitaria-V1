@@ -1,6 +1,6 @@
 # Mércia Confeitaria
 
-Site demonstrativo de uma confeitaria artesanal especializada em bolos de pote e bolos por quilo. O projeto foi criado para praticar fundamentos de desenvolvimento web e compor um portfólio profissional.
+Site demonstrativo de uma confeitaria artesanal especializada em bolos de pote e bolos por quilo.
 
 ## Funcionalidades
 
@@ -48,4 +48,4 @@ O comando recria automaticamente a pasta `dist` a partir dos arquivos principais
 - [Site publicado](https://mercia-confeitaria-carinho.eskeletog3.chatgpt.site)
 - [Repositório no GitHub](https://github.com/HerbertsDev/mercia-confeitaria)
 
-> Projeto demonstrativo desenvolvido para fins de estudo e portfólio.
+> Projeto demonstrativo desenvolvido para fins de melhoria em desenvolvimento web.
