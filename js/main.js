@@ -28,6 +28,18 @@ menuButton?.addEventListener("click", () => {
 
 navigationLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMenu();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 820) {
+    closeMenu();
+  }
+});
+
 window.addEventListener("scroll", () => {
   header?.classList.toggle("scrolled", window.scrollY > 20);
 });
@@ -38,7 +50,7 @@ contactForm?.addEventListener("submit", (event) => {
   const formData = new FormData(contactForm);
   const name = String(formData.get("name") ?? "").trim();
 
-  formFeedback.textContent = `Obrigada, ${name}! Esta é uma simulação e nenhuma mensagem foi enviada.`;
+  formFeedback.textContent = `Obrigada, ${name}! Sua encomenda foi simulada com sucesso; nenhuma mensagem foi enviada.`;
   contactForm.reset();
 });
 
